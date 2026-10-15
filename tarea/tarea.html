@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea: Registro de Notas - v1</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 640px; margin: 30px auto; }
+        section { border: 1px solid #ccc; padding: 12px; margin-bottom: 16px; }
+        .error { color: #c0392b; font-weight: bold; }
+        .borrar-btn { margin-left: 10px; color: red; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Registro de Estudiantes</h1>
+    
+    <section>
+        <h2>Agregar Estudiante</h2>
+        <form id="formEstudiante">
+            <input id="estNombre" type="text" placeholder="Nombre del estudiante">
+            <input id="estNota" type="number" step="0.1" placeholder="Nota">
+            <button type="submit">Registrar</button>
+        </form>
+        <p id="mensajeError"></p>
+    </section>
+
+    <section>
+        <h2>Lista de Alumnos</h2>
+        <ul id="listaEstudiantes"></ul>
+        <p>Promedio General: <span id="promedioGeneral">0.0</span></p>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
